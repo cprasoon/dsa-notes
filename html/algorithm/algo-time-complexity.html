@@ -2,14 +2,17 @@
 <html lang="en">
 <head>
     <head>
-        <script src="assets/js/color-modes.js"></script>
+        <script src="../assets/js/color-modes.js"></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>DSA Notes</title>
 
-        <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/dist/css/css@3.css" rel="stylesheet">
+        <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/dist/css/css@3.css" rel="stylesheet">
+
+        <script type="text/javascript" src="../assets/dist/js/chart.umd.min.js"></script>
+        <script type="module" src="../assets/js/time-complexity-chart.js"></script>
 
     </head>
 
@@ -88,7 +91,7 @@
 <div class="col-lg-8 mx-auto p-4 py-md-5">
     <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
         <a href="/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
-            <img src="assets/icon/64px-Generic-structure-icon.svg.png" />
+            <img src="../assets/icon/64px-Generic-structure-icon.svg.png" />
             <span class="fs-4">DSA Notes</span>
         </a>
     </header>
@@ -99,34 +102,10 @@
             DSA notes based on various courses
         </p>
 
-        <div class="row g-5">
-            <div class="col-md-6">
-                <h3 class="text-body-emphasis">Starter projects</h3>
-                <p>Ready to go beyond the starter template? Check out these open source projects that you can quickly duplicate to a new GitHub repository.</p>
-                <ul class="list-unstyled ps-0">
-                    <li>
-                        <a class="icon-link mb-1" href="data-structure/index.html" rel="noopener" target="">
-                            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                            Data Structures
-                        </a>
-                    </li>
-                    <li>
-                        <a class="icon-link mb-1" href="algorithm/index.html" rel="noopener" target="">
-                            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                            Algorithms
-                        </a>
-                    </li>
 
-                    <li>
-                        <a class="icon-link mb-1" href="algorithm/algo-time-complexity.html" rel="noopener" target="">
-                            <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle"/></svg>
-                            time complexity
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="container-fluid">
+            <canvas id="timeComplexityCanvas"></canvas>
         </div>
-
 
     </main>
     <footer class="pt-5 my-5 text-body-secondary border-top">
@@ -136,31 +115,14 @@
         <br/>
         <h6>Content creation helper links</h6>
         <p>
-            <ul>
-                <li>Boostrap : <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"> Boostrap introduction </a></li>
-                <li>Boostrap Starter template : <a href="https://getbootstrap.com/docs/5.3/examples/starter-template/"> Boostrap Starter template </a></li>
-    </ul>
-        </p>
-
-        <h6>Video lecture / Courses</h6>
-
-        <p>
         <ul>
-            <li>Neetcode.io : <a href="https://neetcode.io/courses/dsa-for-beginners"> Data structures and algorithm for beginners </a></li>
-            <li>The Last Algorithms Course You'll Need : <a href="https://theprimeagen.github.io/fem-algos/"> The Last Algorithms Course You'll Need </a> </li>
-        </ul>
-        </p>
-
-        <h6>Books</h6>
-
-        <p>
-        <ul>
-            <li>Boostrap : <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"> Bootrap introduction </a></li>
-            <li>The Last Algorithms Course You'll Need : <a href="https://theprimeagen.github.io/fem-algos/"> The Last Algorithms Course You'll Need </a> </li>
+            <li>ChartJS : <a href="https://www.chartjs.org/docs/latest/getting-started/installation.html"> Chart JS </a></li>
+            <li>Boostrap container : <a href="https://getbootstrap.com/docs/5.0/layout/containers/"> Boostrap container </a></li>
         </ul>
         </p>
     </footer>
 </div>
-<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
